@@ -14,8 +14,7 @@ router.post ('/create', (request, response) => {
     const createAssignment = new assignmentData({
         username:request.body.username,
         assignmentReport:request.body.assignmentReport,
-        timeSubmitted:request.body.timeSubmitted,
-        studentRegNum:request.body.studentRegNum
+        timeSubmitted:request.body.timeSubmitted
     })
 //.....and save it to the database
     createAssignment.save()
@@ -31,9 +30,9 @@ router.get('/:id', (request, response) =>{
 })
 
 //delete an assignment from the database by the ID passed in the params of the URL
-router.get('/:id', (request, response) => {
+router.delete('/:id', (request, response) => {
     assignmentData.findByIdAndDelete(request.params.id)
-    .then(assignment => { response.json('Assignment deleted')})
+    .then( () => { response.json('Assignment deleted')})
     .catch(error =>{ response.json(error) })
 })
 
@@ -48,3 +47,5 @@ router.post('/update/:id', (request, response) =>{
          })
             .catch(error =>{ response.json(error) })
 })
+
+module.exports = router

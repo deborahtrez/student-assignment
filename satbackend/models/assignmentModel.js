@@ -1,11 +1,7 @@
 const mongoose = require ('mongoose')
 
 const assignmentSchema = new mongoose.Schema({
-    studentRegNum:{
-        type: Number,
-         required: true
-    },
-
+    
     username:{
         type: String,
         required: true
@@ -17,13 +13,13 @@ const assignmentSchema = new mongoose.Schema({
     },
 
     timeSubmitted:{
-        type: Number,
+        type: String,
         required: true
     },
 
     date:{
         type: Date,
-        required: Date.now
+        default: Date.now
     }
 })
 

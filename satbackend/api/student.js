@@ -10,8 +10,7 @@ router.get("/", (request, response) => {
 
 router.post('/create', (request, response) => {
     const createdStudent = new studentData ({
-        username:request.body.username,
-        studentRegNum:request.body.studentRegNum
+        username:request.body.username
     })
 
     createdStudent.save()

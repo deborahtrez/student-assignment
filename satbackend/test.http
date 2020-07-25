@@ -1,0 +1,28 @@
+# POST  http://localhost:5000/student/create http/1.1
+# Content-Type: application/json
+
+# {
+#     "username":"umar"
+# }
+
+# GET http://localhost:5000/student http/1.1
+
+# POST http://localhost:5000/assignment/create http/1.1
+# Content-Type: application/json
+
+# {
+#     "username":"joseph brendan",
+#     "assignmentReport":"Physics",
+#     "timeSubmitted":"six"
+# }
+
+GET http://localhost:5000/assignment http/1.1
+
+# POST http://localhost:5000/assignment/update/5f0df77983685643bc45972a http/1.1
+# Content-Type: application/json
+
+# {
+#     "username":"joseph brendan epaminem",
+#     "assignmentReport":"Developer - full stack",
+#     "timeSubmitted":"nine"
+# }
