@@ -10,16 +10,16 @@ class App extends Component {
     render() { 
         return ( 
             <BrowserRouter>
-                <Nav>
+                <Nav />
                     <div className="container">
                         <Route path= '/signup' component={RegisterStudent} />
                         <Route path= '/create' component={CreatedAssignment} />
                         <Route path= '/' exact component={Assignments} />
                     </div>
-                </Nav>
             </BrowserRouter>
          );
     }
 }
+
  
 export default App;

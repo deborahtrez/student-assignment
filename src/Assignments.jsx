@@ -28,7 +28,8 @@ class Assignments extends Component {
     }
     assignmentStack(){
         return this.state.assignments.map(singledOutAssignment =>{
-            return <Assignment  assignment={singledOutAssignment} deleteAssignment={this.deleteAssignment} key={singledOutAssignment._id} />
+            return <Assignment  assignment={singledOutAssignment} deleteAssignment={this.deleteAssignment} 
+            key={singledOutAssignment._id} />
         })
     }
     render() { 

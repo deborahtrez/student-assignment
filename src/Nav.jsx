@@ -19,19 +19,16 @@ class Nav extends Component {
                         </li>
 
                         <li className="nav-item">
-                            <Link to = '/signup'className="nav-link text-white"> Register Student </Link> 
+                            <Link to ='/signup'className="nav-link text-white"> Register Student </Link> 
                         </li>
 
                         <li className="nav-item">
-                            <Link to = '/create'className="nav-link text-white"> Create Assignment </Link> 
+                            <Link to ='/create'className="nav-link text-white"> Create Assignment </Link> 
                         </li>
                         
                     </ul>
 
-                <form className="form-inline my-2 my-lg-0">
-                    <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
-                    <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+            
 
                 </div>
             </nav>
